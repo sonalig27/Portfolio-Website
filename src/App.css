@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+:root {
+  --primary-white: #fff;
+  --primary-pink: #d81ec8;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+/***********************NAVBAR*******************************/
+.logo {
+  width: 12rem;
+}
+
+/***********************NAV Links****************************/
+
+nav a.nav-link {
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+nav ul {
+  margin-left: auto;
+}
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin: 0rem 0.75rem;
+  /* color: var(--primary-white); */
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  height: 3rem;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-pink);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-pink);
+}
