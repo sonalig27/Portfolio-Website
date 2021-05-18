@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import { Fragment } from "react";
 import Particles from "react-particles-js";
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 function App() {
   return (
     <Fragment>
@@ -67,6 +68,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
+      <Experience />
     </Fragment>
   );
 }
