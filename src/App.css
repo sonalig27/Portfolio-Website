@@ -3,7 +3,9 @@
 :root {
   --primary-white: #fff;
   --primary-pink: #d81ec8;
+  --primary-orange: #ec6711;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-black: #000;
   --primary-light-grey: #f4f4f4;
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
@@ -241,4 +243,112 @@ nav ul li {
     direction: ltr;
     width: 100%;
   }
-} ;
+}
+
+/***********************Portfolio****************************/
+.portfolio-heading {
+  color: var(--primary-pink);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-image {
+  width: 15rem;
+  height: 10rem;
+  border: 1px solid var(--primary-pink);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 10rem;
+  top: 0;
+  border: 1px solid var(--primary-pink);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 4.6rem;
+  color: var(--primary-white);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/*********** OVERFLOW BOX ************/
+.portfolio-image-popupbox {
+  width: 30rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-pink);
+}
+
+.hyper-link:hover {
+  color: var(--primary-orange);
+}
+
+.popupbox-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .popupbox-wrapper {
+    height: 70%;
+  }
+  .portfolio-image-popupbox {
+    width: 40%;
+  }
+}
+
+@media (max-height: 420px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+  .portfolio-image-popupbox {
+    width: 40%;
+  }
+}
+
+@media (max-height: 300px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+  .portfolio-image-popupbox {
+    width: 20%;
+  }
+}

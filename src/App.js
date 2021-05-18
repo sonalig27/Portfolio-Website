@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import Particles from "react-particles-js";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
 function App() {
   return (
     <Fragment>
@@ -69,6 +70,7 @@ function App() {
       <Header />
       <AboutMe />
       <Experience />
+      <Portfolio />
     </Fragment>
   );
 }
