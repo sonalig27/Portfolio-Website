@@ -4,15 +4,18 @@
   --primary-white: #fff;
   --primary-pink: #d81ec8;
   --primary-orange: #ec6711;
-  --primary-dark: rgba(255, 255, 255, 0);
+  /* --primary-dark: rgba(255, 255, 255, 0); */
+  --primary-dark: rgb(52, 58, 64);
   --primary-black: #000;
   --primary-light-grey: #f4f4f4;
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
+  --primary-green: green;
 }
 
 body {
   font-family: "Roboto Slab", serif;
+  background: var(--primary-light-grey);
 }
 
 /***********************NAVBAR*******************************/
@@ -102,17 +105,17 @@ nav ul li {
 }
 
 /***********************Header Button****************************/
-.header-btn {
+.contact-me-btn {
   border: 1px solid var(--primary-pink);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
   margin-top: 2rem;
   text-decoration: none;
 }
 
-.header-btn:hover {
+.contact-me-btn:hover {
   background-color: var(--primary-pink);
   color: var(--primary-white);
   text-decoration: none;
@@ -263,7 +266,9 @@ nav ul li {
   border: 1px solid var(--primary-pink);
   padding: 0 0.5rem;
 }
-
+.image-box-wrapper {
+  margin-bottom: 2rem;
+}
 .portfolio-image-box {
   position: relative;
   margin: 1rem 0;
@@ -351,4 +356,126 @@ nav ul li {
   .portfolio-image-popupbox {
     width: 20%;
   }
+}
+
+/***********************Contacts****************************/
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+.contacts h2 {
+  color: var(--primary-pink);
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 1.4rem 0;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem 0;
+}
+
+.contacts input,
+.contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  outline: 0;
+  color: var(--primary-pink);
+  box-shadow: none !important;
+  top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  background: transparent;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  color: var(--primary-pink);
+}
+
+.contacts textarea {
+  height: 12.4rem;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-pink);
+  display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.35rem 0;
+}
+
+textarea.form-control {
+  margin: -0.35rem 0;
+}
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-orange);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+  .contacts .container {
+    padding-left: 0 1rem;
+  }
+  .contacts p {
+    padding-left: 0 0.4rem;
+  }
+}
+
+/********************** FOOTER COMPONENT ****************************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-pink);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }

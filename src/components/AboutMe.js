@@ -19,6 +19,23 @@ const AboutMe = () => {
             (ES6, AJAX, React), Scrum, Unix with certification courses focused
             in C++, Web development and Python Development.
           </p>
+          <p>
+            <strong>Technical Skills</strong>
+            <br />
+            <strong>Programming Languages:</strong> JavaScript, Python, JAVA,
+            C++, TypeScript, SQL, XML.
+            <br />
+            <strong>Client-Side Development:</strong> React, HTML/HTML5,
+            CSS/CSS3, jQuery, SCSS, JSON
+            <br />
+            <strong>Server-Side Development:</strong> MongoDB, Express, Node.js
+            <br />
+            <strong>Testing Runners:</strong> Jest, Enzyme, Postman
+            <br />
+            <strong>Version Control and Project Management:</strong> Git, Jira
+            <br />
+            <strong>Development Methodologies:</strong> Agile/Scrum, Waterfall
+          </p>
         </div>
       </div>
     </div>

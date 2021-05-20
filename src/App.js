@@ -7,6 +7,8 @@ import Particles from "react-particles-js";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 function App() {
   return (
     <Fragment>
@@ -71,6 +73,8 @@ function App() {
       <AboutMe />
       <Experience />
       <Portfolio />
+      <Contacts />
+      <Footer />
     </Fragment>
   );
 }
